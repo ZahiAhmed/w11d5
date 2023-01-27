@@ -51,9 +51,8 @@ export const newPokemon = (pokemon) => async dispatch => {
     method: "POST",
     body: JSON.stringify(pokemon),
     header: {
-
+      'Content-Type': 'application/json'
     }
-
   })
 
 

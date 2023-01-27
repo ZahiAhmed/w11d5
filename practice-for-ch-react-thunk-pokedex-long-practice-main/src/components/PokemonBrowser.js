@@ -14,6 +14,7 @@ const PokemonBrowser = () => {
   useEffect(() => {
     dispatch(getPokemon())
   }, [])
+
   const pokemon = useSelector(state => {
     return state.pokemon.list.map(pokemonId => state.pokemon[pokemonId]);
   });
